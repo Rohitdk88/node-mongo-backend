@@ -80,7 +80,7 @@ app.get('/', (req, res) => {
 //     }
 // });
 
-mongoose.connect("mongodb+srv://rohitdk88:JAGY2WCdfmGUobng@backenddb.xoskvma.mongodb.net/Node-API?retryWrites=true&w=majority&appName=BackendDB")
+mongoose.connect("mongodb+srv://<username>:<password>@backenddb.xoskvma.mongodb.net/<path>?retryWrites=true&w=majority&appName=<db_name>")
 .then(() => {
     console.log("Connected to MongoDB");
     app.listen(3000, () => {
